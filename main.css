@@ -1,0 +1,52 @@
+:root {
+  --size: 25%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+header {
+  height: 15vw;
+}
+
+header li {
+  display: inline-block;
+}
+
+.first {
+  position: relative;
+  display: flex;
+  height: var(--size);
+  background-color: cyan;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.second {
+  display: flex;
+  height: 50%;
+  background-color: black;
+}
+
+.third {
+  display: flex;
+  height: var(--size);
+  background-color: cyan;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third ul {
+  display: inline;
+}
+
+.last {
+  display: inline-block;
+}
