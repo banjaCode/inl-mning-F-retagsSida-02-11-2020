@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="first">
+      <div class="headerTop">
         <ul>
           <li>first</li>
           <li>second</li>
@@ -16,22 +20,37 @@
           <li>fourth</li>
         </ul>
       </div>
-      <div class="second">
-          <div class="logo"><img src="Namnlös.png" alt="bild på logo för företaget BUE"></div>
-          <div class = "button menyButton"></div>
-          <div class= "button menyButton"></div>
-          <div class = "button menyButton"></div>
-          <div id = "searchBar">
-            <input type="text" placeholder="Search.." size="50" id="fname" name="fname"><br><br></div>
-          <div id = "kassa" class="button"></div>
+      <div class="headerMiddle">
+        <div class="logo">
+          <a href="index.html">
+          <img src="bilder\logo.png" alt="bild på logo för företaget BUE" />
+        </a>
+        </div>
+        <a href="#" class="menyButton">
+          <img src="bilder\present-icon.png" alt="bild på en present">
+          <p>presentips</p>
+        </a>
+        <a href="#"  class="menyButton">
+          <img src="bilder\kampanj-Icon.png" alt="bild på kampanj">
+          <p>kampanjer</p>
+        </a>
+        <a href="#" class="menyButton" >
+       <img src="bilder\medlems-icon.png" alt="icon för att bli medlem">
+       <p>medlemspriser</p>
+      </a>
+        <form id="searchBar" action="/action_page.php">
+          <input id="mySearch" type="text" placeholder="Search.." name="search" onkeyup="myFunction()"/>
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div id="kassa" class="button"></div>
       </div>
-      <div class="third">
+      <div class="headerBottom">
         <ul>
           <li>first</li>
           <li>second</li>
           <li>third</li>
         </ul>
-        <div class="last">fourth</div>
+        <li class="last">fourth</li>
       </div>
     </header>
   </body>
