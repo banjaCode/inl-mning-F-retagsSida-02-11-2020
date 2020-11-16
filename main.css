@@ -171,9 +171,39 @@ a {
 /* här slutar header */
 
 .kampanj {
-  display: inline-block;
+  display: flex;
   width: 98vw;
-  height: 55vh;
-  background-color: blueviolet;
-  transform: translate(1%);
+  height: 63vh;
+  transform: translateX(1%);
+  overflow: hidden;
 }
+
+.kampanj img {
+  width: 100%;
+  height: 100%;
+  animation: mymove 10s infinite alternate;
+}
+
+  @keyframes mymove {
+    0% {
+      transform: translateX(0%);
+    }
+
+    45% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(-100%);
+    }
+
+    55% {
+      transform: translateX(-100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+    
+  }
+
