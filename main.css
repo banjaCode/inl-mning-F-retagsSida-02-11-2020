@@ -7,9 +7,9 @@
   padding: 0%;
   text-decoration: none;
 }
-body {
-  margin: 0%;
-  padding: 0%;
+
+body::-webkit-scrollbar{
+   display: none;
 }
 
 header {
@@ -170,18 +170,20 @@ a {
 
 /* här slutar header */
 
+.content {
+  width: 98vw;
+  transform: translateX(1vw);
+}
+
 .kampanj {
   display: flex;
-  width: 98vw;
-  height: 63vh;
-  transform: translateX(1%);
   overflow: hidden;
 }
 
 .kampanj img {
+  animation: mymove 9s infinite alternate;
   width: 100%;
-  height: 100%;
-  animation: mymove 10s infinite alternate;
+  height: 63vh;
 }
 
   @keyframes mymove {
@@ -206,4 +208,22 @@ a {
     }
     
   }
+
+  .kampanj2 {
+    display: flex;
+    justify-content: space-between;
+    height: 31vh;
+    margin-top: 1.5vw;
+  }
+
+  .kampanj2 img {
+      width: 49%;
+  }
+
+  .block {
+    height: 4vh;
+    background-color: black;
+    margin: 1vw 0%;
+  }
+
 
