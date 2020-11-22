@@ -51,34 +51,60 @@
       </div>
       <div class="headerBottom">
         <ul>
-          <li><a href="#">kategorie</a></li>
-          <li><a href="#">kategorie</a></li>
-          <li><a href="#">kategorie</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
         </ul>
         <li class="last"><a href="fyndhörna">fyndhörna</a></li>
       </div>
     </header>
-    <div class = "content">
+    <div class="content">
+      <div class="kampanj">
+        <img src="bilder\logo.png" alt="" />
+        <img src="bilder\pineapple-supply-co-purEpNm5Zt8-unsplash.jpg" alt="" />
+      </div>
 
-    <div class="kampanj">
-      <img src="bilder\logo.png" alt="" />
-      <img src="bilder\pineapple-supply-co-purEpNm5Zt8-unsplash.jpg" alt="" />
+      <div class="kampanj2">
+        <img src="bilder\pineapple-supply-co-purEpNm5Zt8-unsplash.jpg" alt="" />
+        <img src="bilder\logo.png" alt="" />
+      </div>
+
+      <div class="block">
+        <p>Våra bästa produkter</p>
+      </div>
+      <div class="produkt-container">
+        <a class="produkt" href="produktSida.html"
+          ><img
+            src="bilder\michael-soledad-5vzFrfYJruA-unsplash.jpg"
+            alt="bild på kamera"
+          />
+          <p class="produkt-name">produkt name</p>
+          <p class="produkt-description">
+            produkt description Lorem ipsum dolor sit amet. Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Sequi, a!
+          </p>
+          <div class="cont">
+            <div class="button"><p>köp</p></div>
+            <div class="pris"><p class="pris">599:-</p></div>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <div class = "kampanj2">
-      <img src="bilder\pineapple-supply-co-purEpNm5Zt8-unsplash.jpg" alt="" />
-      <img src="bilder\logo.png" alt="" />
-    </div>
-
-    <div class = "block">
-      <p>nyheter</p>
-    </div>
-
-    <div class="produkter">
-         <div class="produkt"></div>
-         <div class="produkt"></div>
-      
-    </div>
-    </div>
+    <footer></footer>
   </body>
+  <script>
+    function multiplyNode(node, count, deep) {
+      for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+
+    multiplyNode(document.querySelector(".produkt"), 20, true);
+  </script>
 </html>

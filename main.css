@@ -6,10 +6,11 @@
   margin: 0%;
   padding: 0%;
   text-decoration: none;
+  font-family: "roboto";
 }
 
-body::-webkit-scrollbar{
-   display: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
 header {
@@ -20,6 +21,7 @@ header li,
 a {
   display: inline-block;
   color: white;
+  font-size: 1.2vw;
 }
 
 .headerTop {
@@ -35,6 +37,7 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
+
 .headerTop li {
   margin: 0% 2%;
 }
@@ -113,7 +116,8 @@ a {
   padding: 8px;
   outline: none;
   border: none;
-  font-size: 18px;
+  font-size: 2vw;
+  text-align: center center;
 }
 
 #kassa {
@@ -156,6 +160,10 @@ a {
   text-align: center center;
 }
 
+.headerBottom li {
+  font-weight: 100;
+}
+
 .headerBottom .last {
   display: inline-block;
   margin-right: 1%;
@@ -171,13 +179,15 @@ a {
 /* här slutar header */
 
 .content {
-  width: 98vw;
-  transform: translateX(1vw);
+  width: 99vw;
+  transform: translateX(0.5vw);
 }
 
 .kampanj {
   display: flex;
   overflow: hidden;
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
 }
 
 .kampanj img {
@@ -186,44 +196,157 @@ a {
   height: 63vh;
 }
 
-  @keyframes mymove {
-    0% {
-      transform: translateX(0%);
-    }
-
-    45% {
-      transform: translateX(0%);
-    }
-
-    50% {
-      transform: translateX(-100%);
-    }
-
-    55% {
-      transform: translateX(-100%);
-    }
-
-    100% {
-      transform: translateX(-100%);
-    }
-    
+@keyframes mymove {
+  0% {
+    transform: translateX(0%);
   }
 
-  .kampanj2 {
-    display: flex;
-    justify-content: space-between;
-    height: 31vh;
-    margin-top: 1.5vw;
+  45% {
+    transform: translateX(0%);
   }
 
-  .kampanj2 img {
-      width: 49%;
+  50% {
+    transform: translateX(-100%);
   }
 
-  .block {
-    height: 4vh;
-    background-color: black;
-    margin: 1vw 0%;
+  55% {
+    transform: translateX(-100%);
   }
 
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
+.kampanj2 {
+  display: flex;
+  justify-content: space-between;
+  height: 31vh;
+  margin-top: 3vh;
+}
+
+.kampanj2 img {
+  width: 49%;
+  border-radius: 2vw;
+}
+
+.block {
+  display: flex;
+  height: 7vh;
+  background-color: black;
+  color: white;
+  margin: 2.5vh 0%;
+  border-radius: 0.5vw;
+  align-items: center;
+}
+
+.block p {
+  margin-left: 2%;
+}
+
+.produkt-container {
+  display: grid;
+  grid-template: 1fr / repeat(4, 25%);
+}
+
+.produkt {
+  margin: 0 4%;
+  height: 95%;
+  border-radius: 0.5vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s;
+  color: black;
+  align-self: center;
+}
+
+.produkt:hover {
+  box-shadow: 0 4px 8px 0 rgba(44, 253, 62, 0.507), 0 6px 20px 0 rgba(44, 255, 114, 0.356);
+  transition: 0.1s;
+}
+
+.produkt img {
+  height: 72%;
+  width: 100%;
+  border-top-left-radius: 0.5vw;
+  border-top-right-radius: 0.5vw;
+}
+
+.produkt-name {
+  font-size: 1.5vw;
+  text-decoration: underline;
+  margin-left: 4%;
+}
+
+.produkt-description {
+  margin-left: 4%;
+  font-size: 1vw;
+  margin-top: 2%;
+}
+
+.cont {
+  display: flex;
+  width: 90%;
+  transform: translateX(5%);
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6%;
+}
+
+div .button {
+  display: inline-block;
+  padding: 2%;
+  background-color: rgb(22, 180, 22);
+  color: white;
+  border-radius: 10%;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: rgb(30, 255, 30);
+  transition: 0.2s;
+}
+
+.produkt div p {
+  text-align: center;
+}
+
+.pris {
+  display: inline-block;
+  font-size: 2vw;
+  font-weight: 900;
+}
+
+footer {
+  height: 50vh;
+  background: orange;
+}
+
+/* produktsida */
+
+.produkt-article {
+  display: grid;
+  grid-template: 4% 96% / 50% 50%;
+  border: groove;
+  border-radius: 1vw;
+  padding: 5%;
+  background-color: orange;
+  margin: 1.5% 0;
+  height: 1000px;
+}
+
+h1 {
+  grid-area: 1 / 1 / 1 / 3;
+}
+
+.left-side {
+  grid-area: 2 / 1 / 3 / 1;
+}
+
+.produkt-bild {
+  width: 98%;
+}
+
+.produkt-bild img {
+  width: 100%;
+  height: 65vh;
+}

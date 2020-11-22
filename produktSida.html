@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerTop">
+        <ul>
+          <li><a href="#">bli medlem</a></li>
+          <li><a href="#">något</a></li>
+          <li><a href="#">kundservice</a></li>
+          <li><a href="#">butiker</a></li>
+        </ul>
+      </div>
+      <div class="headerMiddle">
+        <div class="logo">
+          <a href="index.html">
+            <img src="bilder\logo.png" alt="bild på logo för företaget BUE" />
+          </a>
+        </div>
+        <a href="#" class="menyButton">
+          <img src="bilder\present-icon.png" alt="bild på en present" />
+          <p>presentips</p>
+        </a>
+        <a href="#" class="menyButton">
+          <img src="bilder\kampanj-Icon.png" alt="bild på kampanj" />
+          <p>kampanjer</p>
+        </a>
+        <a href="#" class="menyButton">
+          <img src="bilder\medlems-icon.png" alt="icon för att bli medlem" />
+          <p>medlemspriser</p>
+        </a>
+        <form id="searchBar" action="/action_page.php">
+          <input
+            id="mySearch"
+            type="text"
+            placeholder="Search.."
+            name="search"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a href="#" id="kassa">kassa</a>
+      </div>
+      <div class="headerBottom">
+        <ul>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+          <li><a href="#">kategori</a></li>
+        </ul>
+        <li class="last"><a href="fyndhörna">fyndhörna</a></li>
+      </div>
+    </header>
+    <div class="content">
+      <article class="produkt-article left-side">
+        <h1>produkt1 för sak1</h1>
+        <div class="article-section">
+          <div class="produkt-bild">
+            <a href="bilder\revolt-164_6wVEHfI-unsplash.jpg"
+              ><img src="bilder\revolt-164_6wVEHfI-unsplash.jpg" alt=""
+            /></a>
+          </div>
+          <section class="produkt-beskrivning">
+            <p>produkt namn</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              nisi autem in sint impedit, suscipit tenetur sapiente neque.
+              Doloremque labore et nesciunt deserunt quasi iure quae placeat
+              accusantium temporibus corrupti doloribus officiis numquam
+              quibusdam, ipsa porro voluptatem ipsum esse voluptate optio
+              necessitatibus, vero quas! Quod voluptatem, fuga, eum facere vel
+              modi ex aliquam at minima perspiciatis, impedit vero consequatur
+              nostrum veniam magni suscipit ipsam consectetur blanditiis ea
+              earum laudantium nemo ducimus. Ab provident quisquam dolor,
+              voluptatem sunt temporibus, facere et dicta vitae magnam qui
+              harum, veniam in? Atque iure sint iste aliquam sit tempore.
+              Voluptatem laudantium nam autem quisquam. Error?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              dolorem.
+            </p>
+          </section>
+        </div>
+        <div class="article-section">
+          <div class="pris">
+            <div>900</div>
+            <ul></ul>
+          </div>
+          <div></div>
+        </div>
+      </article>
+      <div class="block"></div>
+      <div class="produkt-container">
+        <a class="produkt" href="produktSida.html"
+          ><img
+            src="bilder\michael-soledad-5vzFrfYJruA-unsplash.jpg"
+            alt="bild på kamera"
+          />
+          <p class="produkt-name">produkt name</p>
+          <p class="produkt-description">
+            produkt description Lorem ipsum dolor sit amet. Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Sequi, a!
+          </p>
+          <div class="cont">
+            <div class="button"><p>köp</p></div>
+            <div class="pris"><p class="pris">599:-</p></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  <footer></footer>
+  </body>
+  <script>
+    function multiplyNode(node, count, deep) {
+      for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+
+    multiplyNode(document.querySelector(".produkt"), 8, true);
+  </script>
+</html>
